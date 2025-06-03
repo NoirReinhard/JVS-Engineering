@@ -201,7 +201,7 @@
       }
       /* Hero Section */
       .hero {
-        background-image: url("./assets/hero-bg.jpg"); /* Replace with your actual image filename */
+        background-image: url("./assets/hero-bg.jpg");
         background-size: cover;
         background-position: center;
         position: relative;
@@ -438,6 +438,53 @@
           font-size: 1rem;
         }
       }
+      .projects-completed {
+        padding: 60px 20px;
+        background-color: #f5fafc;
+        text-align: center;
+      }
+
+      .projects-completed h2 {
+        font-size: 2.2rem;
+        margin-bottom: 40px;
+        color: #003366;
+        position: relative;
+      }
+
+      .projects-completed h2::after {
+        content: "";
+        width: 60px;
+        height: 4px;
+        background: #00c2ff;
+        display: block;
+        margin: 10px auto 0;
+        border-radius: 2px;
+      }
+
+      .obento-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 25px;
+      }
+
+      .project-box {
+        background: #ffffff;
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+        transition: transform 0.3s ease;
+      }
+
+      .project-box:hover {
+        transform: scale(1.02);
+      }
+
+      .project-box img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+      }
     </style>
   </head>
   <body>
@@ -588,6 +635,21 @@
             <li>Auto / access gate Installation</li>
             <li>Masonry, brick work, and renovation</li>
           </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="projects-completed">
+      <h2>Major Projects Completed</h2>
+      <div class="obento-grid">
+        <div class="project-box">
+          <img src="./assets/projects1.JPG" alt="Project Group 1" />
+        </div>
+        <div class="project-box">
+          <img src="./assets/projects2.JPG" alt="Project Group 2" />
+        </div>
+        <div class="project-box">
+          <img src="./assets/projects3.JPG" alt="Project Group 3" />
         </div>
       </div>
     </section>
